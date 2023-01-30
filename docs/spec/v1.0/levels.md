@@ -15,7 +15,7 @@ purpose and guarantees. For the normative requirements at each level, see
 
 ## What is SLSA?
 
-SLSA is a set of incrementally adoptable security guidelines, established by
+SLSA is a set of incrementally adoptable security guidelines established by
 industry consensus. The standards set by SLSA are guiding principles for both
 software producers and consumers: producers can follow the guidelines to make
 their software more secure, and consumers can make decisions based on a software
@@ -26,7 +26,7 @@ levels represent intermediate milestones with commensurate security guarantees.
 
 Importantly, SLSA is intended to be a primitive in a broader determination of a
 software's risk. SLSA measures specific aspects of supply chain security,
-particularly those that can be fully automated; other aspects, such as developer
+particularly those that can be fully automated. Other aspects, such as developer
 trust and code quality, are out of scope. Furthermore, each link in the software
 supply chain has its own, independent SLSA level---in other words, it is not
 transitive ([FAQ](faq.md#q-why-is-slsa-not-transitive)). The benefit of this
@@ -64,7 +64,7 @@ SLSA is intended to serve multiple populations:
 
 ## Levels and tracks
 
-SLSA levels are split into *tracks*. Each track has its own set of levels that
+SLSA levels are split into two *tracks*: one for **builds** another for **source**. Each track has its own set of levels that
 measure a particular aspect of supply chain security. The purpose of tracks is
 to recognize progress made in one aspect of security without blocking on an
 unrelated aspect. Tracks also allow the SLSA spec to evolve: we can add more
@@ -97,7 +97,7 @@ Summary of the build track:
 -   Set **project-specific expectations** for how the package should be built.
 -   Generate a **provenance attestation** automatically during each build.
 -   **Automatically verify** that each package's provenance meets expectations
-    before allowing its publication and/or consumption.
+    before allowing its publication or consumption.
 
 What sets the levels apart is how much trust there is in the accuracy of the
 provenance and the degree to which adversaries are detected or prevented from
@@ -105,11 +105,16 @@ tampering with the package. Higher levels require hardened builds and protection
 against more sophisticated adversaries.
 
 Each ecosystem (for open source) or organization (for closed source) defines
-exactly how this is implemented, including: means of defining expectations, what
-provenance format is accepted, whether reproducible builds are used, how
-provenance is distributed, when verification happens, and what happens on
-failure. Guidelines for implementers can be found in the
-[requirements](requirements.md).
+exactly how this is implemented, including:
+
+-   Means of defining expectations
+-   What provenance format is accepted
+-   Whether reproducible builds are used
+-   How provenance is distributed 
+-   When verification happens 
+-   What happens on failure 
+
+Guidelines for implementers can be found in the [requirements](requirements.md).
 
 <section id="build-l0">
 
