@@ -200,7 +200,7 @@ Forging the provenance or evading verification requires an explicit "attack",
 though this may be easy to perform. Deters unsophisticated adversaries or those
 who face legal or financial risk.
 
-In practice, this means that builds run on a hosted service that generates and
+In practice, builds run on a hosted service that generates and
 signs the provenance.
 
 <dt>Intended for<dd>
@@ -250,7 +250,7 @@ All of [Build L1], plus:
 Forging the provenance or evading verification requires exploiting a
 vulnerability that is beyond the capabilities of most adversaries.
 
-In practice, this means that builds run on a hardened build service that offers
+In practice, builds run on a hardened build service that offers
 strong tamper protection.
 
 <dt>Intended for<dd>
@@ -264,8 +264,8 @@ All of [Build L2], plus:
 
 -   Build service implements strong controls to:
 
-    -   prevent runs from influencing one another, even within the same project.
-    -   prevent secret material used to sign the provenance from being
+    -   Prevent runs from influencing one another, even within the same project.
+    -   Prevent secret material used to sign the provenance from being
         accessible to the user-defined build steps.
 
 > **TODO:** Add requirement about survey and audit as per the v1.0 proposal.
@@ -274,7 +274,7 @@ All of [Build L2], plus:
 
 All of [Build L2], plus:
 
--   Prevents tampering during the build---by maintainers, compromised
+-   Prevents tampering during the build by maintainers, compromised
     credentials, or other tenants.
 
 -   Greatly reduces the impact of compromised package upload credentials by
