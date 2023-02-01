@@ -42,7 +42,7 @@ Responsibility to implement SLSA is spread across the following parties.
   <td colspan=2>Define expectations
   <td>✓<td>✓<td>✓
 <tr>
-  <td colspan=2>Use acceptable build and release process
+  <td colspan=2>Use acceptable build and release processes
   <td>✓<td>✓<td>✓
 <tr>
   <td rowspan=5><a href="#build-system">Build system</a>
