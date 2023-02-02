@@ -13,12 +13,12 @@ One of the main ideas behind SLSA is to establish trust in a small number of
 systems. In this way, SLSA is able to scale to support hundreds of thousands of
 software projects with a near-constant amount of central work.
 
-We have no option but to manually analyze and reason about the behavior of some
+We manually analyze and reason about the behavior of some
 number of trusted *systems*, such as change management, build, and packaging
 systems. There will always be some trusted computing base on which we rely for
 security. We need to analyze and reason about this computing base to convince
 ourselves that it meets our security needs. Such analysis is difficult and
-expensive. We cannot possibly harden and audit thousands of bespoke build
+expensive. We cannot harden and audit thousands of bespoke build
 systems. We can, however, do this for a small number of general purpose systems.
 
 Once we have a set of trusted systems, we can verify the supply chain of
