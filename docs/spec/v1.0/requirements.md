@@ -123,7 +123,7 @@ Every release:
 If the packaging ecosystem supports verified [reproducible
 builds](https://reproducible-builds.org), the producer may continue building
 mostly as they have always done, with no specific requirements other than
-generating sufficient provenance. Independent "rebuilders" will reproduce the
+generating sufficient provenance. Independent "rebuilders" reproduce the
 build after-the-fact to corroborate the trustworthiness of the provenance.
 
 Every release:
@@ -131,7 +131,7 @@ Every release:
 -   Use the build and release process provided by the packaging ecosystem, which
     should generate provenance in an acceptable format.
 -   Ensure that the build is deterministic and that all dependencies are
-    properly declared. Otherwise rebuilders will not be able to reproduce the
+    properly declared. Otherwise rebuilders are not able to reproduce the
     package.
 
 ## Build system
