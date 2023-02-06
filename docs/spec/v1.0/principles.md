@@ -15,7 +15,7 @@ software projects with a near-constant amount of central work.
 
 We manually analyze and reason about the behavior of some
 number of trusted *systems*, such as change management, build, and packaging
-systems. There will always be some trusted computing base on which we rely for
+systems. There is always some trusted computing base on which we rely for
 security. We need to analyze and reason about this computing base to convince
 ourselves that it meets our security needs. Such analysis is difficult and
 expensive. We cannot harden and audit thousands of bespoke build
