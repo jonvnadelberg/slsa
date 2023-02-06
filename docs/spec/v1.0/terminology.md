@@ -3,8 +3,8 @@ title: Terminology
 ---
 <div class="subtitle">
 
-Before diving into the [SLSA Levels](levels.md), we need to establish a core set
-of terminology and models to describe what we're protecting.
+Before diving into the [SLSA Levels](levels.md), we are establishing a core set
+of terminology and models to describe what we are protecting.
 
 </div>
 
